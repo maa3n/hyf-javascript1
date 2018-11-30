@@ -59,7 +59,8 @@ function vehicleType(color, code) {
 }
 console.log(vehicleType("blue", 2));
 //------------------------
-console.log(3 === 3 ? "yes" : "no");
+
+3 === 3 ? console.log("yes") : console.log("No");
 //------------------------
 function vehicle(color, code, age) {
     if (code === 1 && age >= 1) {
@@ -102,3 +103,12 @@ console.log(listOfVehicle);
 let myEmpty = {};
 //-------------------------
 let myTeachers = { Node: "Rogier", JS: "Mauro", CSS: "Philipe" };
+//-------------------------
+let ourTeachers = {
+    names : ['Arco', 'Rogier', 'Philipp'],
+    languages : ['HTML', 'CSS', 'JavaScript'],
+    info : function(){
+      return "Teachers: " + this.names +". The languages: "+ this.languages;
+    }
+}
+console.log (ourTeachers.info());
